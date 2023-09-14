@@ -1,0 +1,23 @@
+<form (submit)="onSubmit()">
+  <h2>{{title}}</h2>
+  <div>
+    <label>Last Name: </label>
+    <input [(ngModel)]="user.lastName" name="LastName">
+  </div>
+  <div>
+    <label>First Name: </label>
+    <input [(ngModel)]="user.firstName" name="firstName">
+  </div>
+  <div>
+    <label>Email: </label>
+    <input [(ngModel)]="user.email" name="email">
+  </div>
+  <button type="submit">Submit</button>
+</form>
+
+<p>{{ confirmation }}</p>
+
+
+<app-user-mailing-list-form></app-user-mailing-list-form>
+ 
+
